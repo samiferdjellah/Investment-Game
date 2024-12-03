@@ -1,4 +1,8 @@
-# Investment-Game.py
-# frank is working on, "Create different kinds of orders (buy, sell, limits, stop orders, etc.)"
-# tom is working in,  
-# sami is working on, "A GUI (web)."
+from person import Person
+
+if __name__ == "__main__":
+    person = Person()
+    firstName = person.getFirstName()
+    lastName = person.getLastName()
+    email = person.getEmail()
+    print(person)
