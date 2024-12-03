@@ -6,3 +6,13 @@ class order_type:
             print(selling stocks)
         else:
             print(order stocks)
+    
+    def limit risks
+        order_input = input("do you want to create a safety price limit of your stocks or place a stop orders")
+        if order_input = "safety price limit":
+            print(safety price limit)
+        else:
+            print(stop orders)
+
+
+order_type()
