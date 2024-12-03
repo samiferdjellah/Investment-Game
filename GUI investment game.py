@@ -1,6 +1,6 @@
 # GUI investment game.py
 class order_type:
-    def __init__(self):
+    def __init__(self, cash_input):
         order_input = input("what do you want to do, buy or sell your stocks ?")
         if order_input = "sell":
             print("selling stocks")
@@ -13,6 +13,7 @@ class order_type:
             print("safety price limit")
         else:
             print("stop orders")
-
-
+    def cashbalance(self, cash_input)
+        
+        #your cash balance is low
 order_type()
