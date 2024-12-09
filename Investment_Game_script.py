@@ -1,5 +1,5 @@
 
-from person import Person
+from investment.person import Person
 
 if __name__ == "__main__":
     person = Person()
