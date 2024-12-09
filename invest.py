@@ -22,3 +22,4 @@ order.name = name
 quantity = input("Enter the amount of stocks you want.")
 order.quantity = quantity
 order.stockValue = latestOpen
+order.calculateTotal(quantity, latestOpen)
