@@ -8,6 +8,7 @@ lastName = input("Please enter your last name: ")
 person = Person(firstName, lastName)
 portfolio = Portfolio(person, [], 0)
 
+<<<<<<< HEAD
 proceed = True
 
 while(proceed):
@@ -36,7 +37,7 @@ while(proceed):
 
   portfolio.add_order(order)
 
-  print(f"{person}, your portfolio consists of following stocks: {portfolio}" )
+  print(f"{person}, your portfolio consists of following stocks: \n{portfolio}" )
   input("Would you like to proceed? (y/n): ")
   if not proceed:
     exit()
