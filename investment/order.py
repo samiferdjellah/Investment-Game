@@ -11,6 +11,9 @@ class Order:
   
   def calculateTotal(self, quantity: int, price: float) -> None:
     self.total = quantity * price
+    
+  def __str__(self) -> str:
+    return f"name: {self.name}\nquantity: {self.quantity}\ntype: {self.type}\nstock price: {self.stockValue}\ntotal: {self.total}"
   
     
     

@@ -1,14 +1,18 @@
-from person import Person
-from order import Order
+from investment.person import Person
+from investment.order import Order
 
 class Portfolio:
-  def __init__(self, person: Person, stocks: list[Order], balance: float):
+  def __init__(self, person: Person, orders: list[Order], balance: float):
     self.person = person
-    self.stocks = stocks
+    self.orders = orders
     self.balance = balance
     
   def add_order(self, order: Order):
-    self.stocks.append(order)
+    self.orders.append(order)
     
   def __str__(self) -> str:
-    
+    orders = ""
+    f"{self.person} has following stocks in his portfolio: "
+    for order in self.orders:
+      orders += order.__str__() + "\n"
+    return orders
