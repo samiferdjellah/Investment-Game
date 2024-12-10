@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 training_ex
+test
+exercises

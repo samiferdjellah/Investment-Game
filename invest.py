@@ -1,8 +1,12 @@
 import requests
 from investment.order import Order
+from investment.portfolio import Portfolio
+from investment.person import Person 
 
-
-orderType = input("what do you want to do, buy(b) or sell(s) your stocks ?")
+firstName = input("Please enter your name: ")
+lastName = input("Please enter your last name: ")
+person = Person(firstName, lastName)
+orderType = input("What do you want to do, buy(b) or sell(s) stocks?")
 
 if orderType == "s":
     print("selling stocks")
@@ -23,3 +27,8 @@ quantity = input("Enter the amount of stocks you want.")
 order.quantity = quantity
 order.stockValue = latestOpen
 order.calculateTotal(quantity, latestOpen)
+
+portfolio = Portfolio(person, [], 0)
+portfolio.add_order(order)
+
+print(f"{person}, your portfolio consists of following stocks: {portfolio}" )

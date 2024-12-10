@@ -1,3 +1,1 @@
-requirements_GUI.txt
-GUI
-the GUI will be done with user input in the beginning
+requests==2.32.3
