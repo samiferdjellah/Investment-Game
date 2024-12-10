@@ -8,7 +8,6 @@ lastName = input("Please enter your last name: ")
 person = Person(firstName, lastName)
 portfolio = Portfolio(person, [], 0)
 
-<<<<<<< HEAD
 proceed = True
 
 while(proceed):
