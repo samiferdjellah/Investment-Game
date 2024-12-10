@@ -31,4 +31,4 @@ order.calculateTotal(quantity, latestOpen)
 portfolio = Portfolio(person, [], 0)
 portfolio.add_order(order)
 
-print(f"{person}, your portfolio consists of following stocks: {portfolio}" )
+print(f"{person}, your portfolio consists of following stocks: \n{portfolio}" )
