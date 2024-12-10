@@ -13,13 +13,13 @@ if orderType == "s":
 elif orderType == "o":
     print("order stocks")
 
-order = Order(None, type, None, None, None)
+order = Order(None, orderType, None, None, None)
 response = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo", verify=False)
                         
 data = response.json()
 print(data)
 latest = list(data["Time Series (5min)"].keys())[0]
-latestOpen = data["Time Series (5min)"][latest]['1. open']
+latestOpen = float(data["Time Series (5min)"][latest]['1. open'])
 
 name = input("Please enter the name of the stock you want to place an order for: ")
 order.name = name

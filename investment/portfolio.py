@@ -12,7 +12,7 @@ class Portfolio:
     
   def __str__(self) -> str:
     orders = ""
-    f"{self.person} has following stocks in his portfolio: "
+    f"{self.person} has following stocks in his portfolio:\n"
     for order in self.orders:
       orders += order.__str__() + "\n"
     return orders
